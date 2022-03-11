@@ -7,6 +7,5 @@ jobs:
     uses:  yext/answers-headless/.github/workflows/wcag_test_reuse.yml@dev/test-reusable-workflows
     with:
       node_version: '15.x'
-      build_script: ''
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
