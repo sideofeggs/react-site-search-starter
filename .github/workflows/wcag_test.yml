@@ -6,6 +6,6 @@ jobs:
   call_WCAG_test:
     uses:  yext/answers-headless/.github/workflows/wcag_test_reuse.yml@dev/test-reusable-workflows
     with:
-      node_version: '15.x'
+      node_version: 15.x
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
