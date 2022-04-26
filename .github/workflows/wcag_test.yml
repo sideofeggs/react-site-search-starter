@@ -1,9 +1,12 @@
 name: WCAG tests
 
-on: push
+on:
+  push:
+  pull_request:
+    branches: [main, develop, hotfix/*, release/*, support/*]
 
 jobs:
-  call_WCAG_test:
-    uses:  yext/answers-headless/.github/workflows/wcag_test_reuse.yml@dev/test-reusable-workflows
+  call_wcag_test:
+    uses: yext/slapshot-reusable-workflows/.github/workflows/wcag_test.yml@v1
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

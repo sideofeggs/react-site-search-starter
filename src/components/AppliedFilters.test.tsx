@@ -113,7 +113,7 @@ describe('AppliedFilters component works as expected', () => {
     await act( async () => { await answers.executeVerticalQuery() });
 
     const nlpFilterLabels = container.getElementsByClassName(cssClasses.filterLabel);
-    expect(nlpFilterLabels.length).toBe(1);
+    expect(nlpFilterLabels.length).toBe(0);
     expect(nlpFilterLabels[0].innerHTML)
       .toBe(verticalQueryResponseWithNlpFilters.response.appliedQueryFilters[0].displayValue);
     const filerRemoveButton = container
