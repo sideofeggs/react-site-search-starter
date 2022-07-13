@@ -13,7 +13,7 @@ export const universalResultsConfig: UniversalResultsConfig = {
     }
   },
   events: {
-    label: 'Events',
+    label: 'EVENTS',
     cardConfig: {
       CardComponent: StandardCard,
       showOrdinal: false
